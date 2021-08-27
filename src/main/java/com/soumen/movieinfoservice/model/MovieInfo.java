@@ -3,7 +3,7 @@ package com.soumen.movieinfoservice.model;
 public class MovieInfo {
 	
 	private int movieid;
-	private String name;
+	private String moviename;
 	
 	public MovieInfo() {
 		super();
@@ -12,7 +12,7 @@ public class MovieInfo {
 	public MovieInfo(int movieid, String name) {
 		super();
 		this.movieid = movieid;
-		this.name = name;
+		this.moviename = name;
 	}
 
 	public int getMovieid() {
@@ -24,16 +24,16 @@ public class MovieInfo {
 	}
 
 	public String getName() {
-		return name;
+		return moviename;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.moviename = name;
 	}
 
 	@Override
 	public String toString() {
-		return "MovieInfo [movieid=" + movieid + ", name=" + name + "]";
+		return "MovieInfo [movieid=" + movieid + ", name=" + moviename + "]";
 	}
 	
 	
